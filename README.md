@@ -17,7 +17,7 @@ Shortcut Launcher is a Chrome extension that lets you open websites quickly usin
     *   ~~Go to the [Shortcut Launcher page on the Chrome Web Store](CHROME_WEB_STORE_URL_HERE).~~
     *   ~~Click "Add to Chrome" and confirm the installation.~~
 
-2.  **From Source (for developers)**:
+2.  **From Source**:
     *   Download or clone this repository to your local machine.
     *   Open Chrome and navigate to `chrome://extensions`.
     *   Enable "Developer mode" using the toggle switch in the top right corner.
