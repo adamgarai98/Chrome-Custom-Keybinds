@@ -20,7 +20,7 @@ Shortcut Launcher is a Chrome extension that lets you open websites quickly usin
 2.  **From Source**:
     *   Download or clone this repository to your local machine.
     *   Open Chrome and navigate to `chrome://extensions`.
-    *   Enable "Developer mode" using the toggle switch in the top right corner.
+    *   Enable "Developer mode" using the toggle switch.
     *   Click on "Load unpacked" and select the directory where you downloaded/cloned the extension.
 
 ## Changing the Default Shortcut (`Alt+Z`)
