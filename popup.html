@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shortcut Launcher</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Shortcut Launcher</h1>
+            <button id="save-current-url-btn">Save Current URL</button>
+        </div>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="launcher">Launcher</button>
+            <button class="tab-button" data-tab="config">Configuration</button>
+        </div>
+
+        <div id="launcher" class="tab-content active">
+            <div id="launcher-status">Waiting for input...</div>
+        </div>
+
+        <div id="config" class="tab-content">
+            <div id="config-container"></div>
+            <button id="add-keybind">Add New URL</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="save-modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Press a key to assign to the current URL</h2>
+            <p>Press Esc to cancel</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

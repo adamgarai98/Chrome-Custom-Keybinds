@@ -1,0 +1,113 @@
+:root {
+    --bg-color: #1a1b26;
+    --primary-color: #24283b;
+    --accent-color: #7aa2f7;
+    --text-color: #c0caf5;
+    --placeholder-color: #565f89;
+    --success-color: #9ece6a;
+    --danger-color: #f7768e;
+    --border-radius: 6px;
+    --transition-speed: 0.2s;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 30px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+#config-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--primary-color);
+    padding: 12px;
+    border-radius: var(--border-radius);
+}
+
+.key-input, .url-input, .config-buttons button {
+    height: 48px;
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+.key-input, .url-input, .config-buttons button {
+    height: 48px;
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+.key-input {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.url-input {
+    flex-grow: 1;
+    min-width: 0;
+    margin-right: 12px; /* Add some margin to separate from delete button */
+}
+
+.config-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.config-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+}
+.delete-btn:hover {
+    background-color: #ff91a4;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.main-buttons button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color var(--transition-speed);
+}
+
+.main-buttons button:hover {
+    background-color: #9cacff;
+}
